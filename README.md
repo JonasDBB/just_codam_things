@@ -1,4 +1,4 @@
-add_aliases.sh:
+## add_aliases.sh:
 
 This will add some essentials for use of the codam computers.
 
@@ -10,7 +10,11 @@ it will add
 and afterwards it will source your shell, applying everything that was added.
 
 How to use script:
-Download the script and run it.
+```shell
+curl -o ~/add_aliases.sh https://raw.githubusercontent.com/JonasDBB/just_codam_things/master/add_aliases.sh
+bash ~/add_aliases.sh
+```
+Or just download and run it yourself.
 
 How to use added functions:
 `clearhome` will clean up and tell you how much space you had before and have after.
