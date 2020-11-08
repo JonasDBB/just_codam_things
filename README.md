@@ -16,7 +16,7 @@ zsh ~/add_aliases.sh
 ```
 Or just download and run it yourself.
 
-### How to use added functions:
+### How to use added functionality:
 
 `clearhome` will clean up and tell you how much space you had before and have after.
 
