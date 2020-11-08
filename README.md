@@ -17,7 +17,9 @@ zsh ~/add_aliases.sh
 Or just download and run it yourself.
 
 How to use added functions:
+
 `clearhome` will clean up and tell you how much space you had before and have after.
+
 `code <filename/foldername>` will open `filename` or `foldername` in VSCode, for example `code ~/.zshrc` or `code .`
 
 For the docker and minikube symlinks to be setup correctly, the program needs to have run at least once, since that's when it will create the folders that need to be linked to your goinfre.
