@@ -12,7 +12,7 @@ and afterwards it will source your shell, applying everything that was added.
 How to use script:
 ```shell
 curl -o ~/add_aliases.sh https://raw.githubusercontent.com/JonasDBB/just_codam_things/master/add_aliases.sh
-bash ~/add_aliases.sh
+zsh ~/add_aliases.sh
 ```
 Or just download and run it yourself.
 
