@@ -9,14 +9,14 @@ it will add
 - same for minikube
 and afterwards it will source your shell, applying everything that was added.
 
-How to use script:
+### How to use script:
 ```shell
 curl -o ~/add_aliases.sh https://raw.githubusercontent.com/JonasDBB/just_codam_things/master/add_aliases.sh
 zsh ~/add_aliases.sh
 ```
 Or just download and run it yourself.
 
-How to use added functions:
+### How to use added functions:
 
 `clearhome` will clean up and tell you how much space you had before and have after.
 
