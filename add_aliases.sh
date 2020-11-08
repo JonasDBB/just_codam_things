@@ -1,7 +1,11 @@
 # created by Jonas ( jbennink )
 
-# add empty line, in case file doesn't end in newline
-echo >> ~/.zshrc
+# add newline at end of file in case it doesn't end in a newline
+if [ ! -z "$(tail -c 1 ~/.zshrc)" ]
+then
+	echo "adding newline"
+	echo >> ~/.zshrc
+fi
 
 # check if alias clearhome exists and add it
 
@@ -38,11 +42,11 @@ if command -v docker &> /dev/null
 then
 	if grep -q "~/Library/Containers/com.docker.docker" ~/.zshrc
 	then
+		echo "docker symlink probably already exists"
+	else
 		echo "creating symlink to goinfre for docker"
 		echo "rm -rf ~/Library/Containers/com.docker.docker" >> ~/.zshrc
 		echo "ln -s ~/goinfre/docker ~/Library/Containers/com.docker.docker" >> ~/.zshrc
-	else
-		echo "docker symlink probably already exists"
 	fi
 else
 	echo "docker is not installed"
@@ -58,12 +62,12 @@ if command -v minikube &> /dev/null
 then
 	if grep -q "~/goinfre/machines" ~/.zshrc
 	then
+		echo "minikube symlink probably already exists"
+	else
 		echo "creating symlink to goinfre for minikube"
 		echo "mkdir -p ~/goinfre/machines" >> ~/.zshrc
 		echo "rm -rf ~/.minikube/machines" >> ~/.zshrc
 		echo "ln -s ~/goinfre/machines ~/.minikube/machines" >> ~/.zshrc
-	else
-		echo "minikube symlink probably already exists"
 	fi
 else
 	echo "minikube is not installed"
