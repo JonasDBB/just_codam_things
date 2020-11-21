@@ -30,7 +30,7 @@ then
 	echo "code alias already exists"
 else
 	echo "creating code alias for vscode"
-	echo "alias code=\"open -a Visual\ Studio\ Code\"" >> ~/.zshrc
+	echo "alias code='open -a Visual\ Studio\ Code'" >> ~/.zshrc
 fi
 
 # this will check if docker is installed and if it does,
